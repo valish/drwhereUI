@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;' name='viewport' />
+	<meta name="viewport" content="width=device-width" />
+  <title>NPI Locator</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="viewport">
+		<div id="page">
+			<div id="pageHeader">
+				<table>
+					<tbody>
+						<tr>
+							<td class="left"></td>
+							<td class="center"><i class="icon-user-md"></i>Physician Finder</td>
+							<td class="right"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="categories">
+				<a class="category">General Practice</a>
+			</div>
+			<div id="container">
+				<%= yield %>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
